@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Bodnar</title>
+    <meta name="description" content="Daniel Bodnar | SRE &#x2F; Infrastructure Engineer &#x2F; Solutions Architect &#x2F; Linux Evangelist">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[var(--background)] text-[var(--text)] transition-colors duration-300 font-sans">
+    <div class="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
+        <div class="absolute top-20 left-10 w-40 h-40 rounded-full bg-[var(--primary)] opacity-10 floating"></div>
+        <div class="absolute bottom-10 right-20 w-60 h-60 rounded-full bg-[var(--secondary)] opacity-10 floating" style="animation-delay: 2s;"></div>
+        <div class="absolute top-1/3 right-1/4 w-32 h-32 rounded-full bg-[var(--primary)] opacity-10 floating" style="animation-delay: 4s;"></div>
+    </div>
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Theme Selector -->
+        <div class="flex justify-end gap-3 mb-6">
+            <div class="theme-selector w-6 h-6 rounded-full bg-blue-500" onclick="changeTheme('blue')" title="Blue Theme"></div>
+            <div class="theme-selector w-6 h-6 rounded-full bg-purple-500" onclick="changeTheme('purple')" title="Purple Theme"></div>
+            <div class="theme-selector w-6 h-6 rounded-full bg-amber-500" onclick="changeTheme('amber')" title="Amber Theme"></div>
+            <button onclick="toggleDarkMode()" class="ml-4 px-3 py-1 rounded-md bg-[var(--primary)] text-white text-xs">
+                <i class="fas fa-moon"></i> Toggle Dark
+            </button>
+        </div>
+
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 gap-6">
+    <div>
+        <h1 class="text-3xl font-bold mb-1">Daniel Bodnar</h1>
+        <h2 class="text-xl text-[var(--primary)] font-semibold mb-2">SRE &#x2F; Infrastructure Engineer &#x2F; Solutions Architect &#x2F; Linux Evangelist</h2>
+        <p class="text-sm opacity-80">Highly motivated, driven, and completely self-taught engineer with 27+ years experience as a full-stack software developer (since 1996) and over 18 years of Platform&#x2F;Infrastructure engineering and IT automation. Interested in growth opportunities related to low-level Linux, networking, embedded development, and optimizations empowered by FPGA and programmable hardware.</p>
+    </div>
+    <div class="flex flex-col items-end">
+        <div class="flex items-center mb-2">
+            <i class="fas fa-envelope mr-2 text-[var(--primary)]"></i>
+            <span class="text-sm"><a href="mailto:daniel.bodnar@gmail.com">daniel.bodnar@gmail.com</a></span>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-phone mr-2 text-[var(--primary)]"></i>
+            <span class="text-sm">(260) 348-8789</span>
+        </div>
+        <div class="flex items-center mb-2">
+            <i class="fas fa-map-marker-alt mr-2 text-[var(--primary)]"></i>
+            <span class="text-sm">Denton, Texas</span>
+        </div>
+        <div class="flex items-center">
+            <i class="fas fa-globe mr-2 text-[var(--primary)]"></i>
+            <span class="text-sm"><a href="https:&#x2F;&#x2F;bodnar.sh">bodnar.sh</a></span>
+        </div>
+    </div>
+</header>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Experience -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Work Experience</h2>
+
+    
+    <div class="mb-6">
+        <div class="flex justify-between items-start">
+            <h3 class="font-semibold">Principal Software, DevOps, and Cloud Engineer</h3>
+            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2023 - 2025</span>
+        </div>
+        <p class="text-sm text-[var(--primary)] mb-2">Fidelity Investments</p>
+        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+            
+            <li>Architected comprehensive AWS solutions for enterprise applications, including designing secure networking topologies and multi-account strategies</li>
+            
+            <li>Developed and implemented robust IAM policies and CloudFormation templates adhering to strict financial industry security standards</li>
+            
+            <li>Designed and built a full AWS CDK platform enabling teams to rapidly deploy standardized, compliant infrastructure</li>
+            
+            <li>Engineered Kubernetes-based deployment solutions leveraging EKS, Helm charts, and custom operators for application management</li>
+            
+            <li>Rebuilt and optimized the Jenkins Core platform, increasing build efficiency and reducing pipeline execution times</li>
+            
+            <li>Created a cloud orchestration CLI tool that simplified cross-account resource management and deployment workflows</li>
+            
+        </ul>
+    </div>
+    
+    <div class="mb-6">
+        <div class="flex justify-between items-start">
+            <h3 class="font-semibold">Founder, Cloud Architect, CIO</h3>
+            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2021 - Present</span>
+        </div>
+        <p class="text-sm text-[var(--primary)] mb-2">BitBuilder Cloud, LLC</p>
+        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+            
+            <li>Launched a web hosting and cloud consulting private SaaS company using 5 highly customized AMD &amp; Dell based co-located servers</li>
+            
+            <li>Containerized and load-balanced several high-profile organizations with 1M+ global visitors&#x2F;day</li>
+            
+            <li>Single-handedly built core services on co-located custom bare metal 3rd-gen AMD-based servers with over 2TB RAM, 320 cores, 64TB enterprise-grade NVMe storage</li>
+            
+            <li>Orchestrated global scaling via a multi-cloud hybrid overlay layer based on custom k8s distribution and buildroot and WolfiOS immutable linux operating systems</li>
+            
+        </ul>
+    </div>
+    
+    <div class="mb-6">
+        <div class="flex justify-between items-start">
+            <h3 class="font-semibold">SRE, SysAdmin, and Platforms Engineer</h3>
+            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2019 - 2021</span>
+        </div>
+        <p class="text-sm text-[var(--primary)] mb-2">RSVP &amp; ACT, Inc</p>
+        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+            
+            <li>Managed and performance-tuned +3.5TB postgresql database cluster, MySql and SQLite databases</li>
+            
+            <li>Architected, deployed, and managed dynamically scaling, secure, and fully version-controlled hybrid and bare-metal kubernetes clusters</li>
+            
+            <li>Deployed and managed self-hosted gitlab instance with DevOps build pipelines and automatic blue-green deployments</li>
+            
+            <li>Implemented monitoring, alerting, logging, tracing, and observability tools</li>
+            
+        </ul>
+    </div>
+    
+    <div class="mb-6">
+        <div class="flex justify-between items-start">
+            <h3 class="font-semibold">IT Director</h3>
+            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2018 - 2019</span>
+        </div>
+        <p class="text-sm text-[var(--primary)] mb-2">Perspectives.org</p>
+        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+            
+            <li>Developed 5 year vision, roadmap, and project plan to rebuild legacy monolithic .NET 3.5 application</li>
+            
+            <li>Increased cloud hosting capacity by 10x while reducing budget by 50%</li>
+            
+            <li>Reduced minimum page load time from 5 sec to an avg of 0.8s</li>
+            
+            <li>Built a DRM-secured offline-enabled streaming video player desktop app in Go</li>
+            
+        </ul>
+    </div>
+    
+    <div >
+        <div class="flex justify-between items-start">
+            <h3 class="font-semibold">Professional Application Developer</h3>
+            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">2014 - 2017</span>
+        </div>
+        <p class="text-sm text-[var(--primary)] mb-2">AT&amp;T Corp.</p>
+        <ul class="list-disc list-inside text-sm space-y-1 pl-2">
+            
+            <li>Full stack application engineer building custom web-based tools and services</li>
+            
+            <li>Managed entire project pipeline, from requirements gathering to production deployment</li>
+            
+            <li>Led team-wide migration from rails&#x2F;mysql stack to node.js, angular.js, and mongodb</li>
+            
+            <li>Engineered a docker-based devops and deployment pipeline</li>
+            
+            <li>Architected and built a large-scale external &quot;Order Status&quot; application and a decoupled &quot;microservice&quot; pipeline</li>
+            
+        </ul>
+    </div>
+    
+</section>
+
+                <!-- Education -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Education & Background</h2>
+
+    
+    <div >
+        <div class="flex justify-between items-start">
+            <h3 class="font-semibold">Self-Taught Engineer</h3>
+            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">1996 - Present</span>
+        </div>
+        <p class="text-sm text-[var(--primary)] mb-2">Completely Self-Taught</p>
+        <p class="text-sm">27+ years of continuous learning and hands-on experience as a full-stack software developer and Platform&#x2F;Infrastructure engineer. Expertise gained through practical application, experimentation, and staying current with emerging technologies.</p>
+    </div>
+    
+</section>
+
+
+                <!-- Projects -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Areas of Interest</h2>
+
+    
+    <div class="mb-6">
+        <h3 class="font-semibold mb-1">Low-level Linux &amp; Embedded Development</h3>
+        <p class="text-sm mb-2">Deep interest in kernel-level optimizations, embedded systems, and hardware programming</p>
+        <div class="flex flex-wrap gap-2">
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Embedded Development</span>
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">FPGA</span>
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Programmable Hardware</span>
+            
+        </div>
+    </div>
+    
+    <div class="mb-6">
+        <h3 class="font-semibold mb-1">Distributed Systems Architecture</h3>
+        <p class="text-sm mb-2">Passion for designing and building scalable, resilient distributed systems</p>
+        <div class="flex flex-wrap gap-2">
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Microservices</span>
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Event-Driven Architecture</span>
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Service Mesh</span>
+            
+        </div>
+    </div>
+    
+    <div >
+        <h3 class="font-semibold mb-1">Innovation &amp; Emerging Technologies</h3>
+        <p class="text-sm mb-2">Early adopter focused on cutting-edge technologies and optimization techniques</p>
+        <div class="flex flex-wrap gap-2">
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Early Technology Adoption</span>
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">System Optimization</span>
+            
+            <span class="text-xs bg-[var(--secondary)] bg-opacity-20 px-2 py-1 rounded">Performance Engineering</span>
+            
+        </div>
+    </div>
+    
+</section>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Skills -->
+                 <!-- adjust width if you want to increase skills percentage -->
+                 <!-- adjust width if you want to add increase skills percentage -->
+<section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Skills</h2>
+
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">Linux Ecosystem &amp; Platform Engineering</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 98%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">Containerization &amp; Kubernetes</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 95%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">AWS Cloud Architecture &amp; CDK</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 93%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">Infrastructure as Code (Terraform&#x2F;Ansible)</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 90%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">Rust &amp; Systems Programming</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 88%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">JavaScript&#x2F;TypeScript &amp; Node.js</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 92%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">Vue.js&#x2F;Nuxt.js &amp; Frontend Frameworks</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 85%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">Database Systems (PostgreSQL&#x2F;SQLite&#x2F;MongoDB)</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 88%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">Network Engineering &amp; Security</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 90%"></div>
+        </div>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm mb-2">Monitoring &amp; Observability (Grafana&#x2F;Prometheus)</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 87%"></div>
+        </div>
+    </div>
+    
+    <div >
+        <h3 class="font-semibold text-sm mb-2">DevOps &amp; CI&#x2F;CD Pipelines</h3>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 93%"></div>
+        </div>
+    </div>
+    
+</section>
+
+                <!-- Certifications -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Core Competencies</h2>
+
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm">Infrastructure Architecture</h3>
+        <p class="text-xs text-[var(--primary)]">Enterprise-grade platform design</p>
+    </div>
+    
+    <div class="mb-4">
+        <h3 class="font-semibold text-sm">Cloud Engineering</h3>
+        <p class="text-xs text-[var(--primary)]">AWS, multi-cloud strategies</p>
+    </div>
+    
+    <div >
+        <h3 class="font-semibold text-sm">Container Orchestration</h3>
+        <p class="text-xs text-[var(--primary)]">Kubernetes, Docker, custom distributions</p>
+    </div>
+    
+</section>
+
+                <!-- Languages -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Languages</h2>
+
+    
+    <div >
+        <div class="flex justify-between text-sm mb-1">
+            <span>English</span>
+            <span>Native</span>
+        </div>
+        <div class="skill-bar bg-gray-200">
+            <div class="progress bg-[var(--primary)]" style="width: 100%"></div>
+        </div>
+    </div>
+    
+</section>
+                
+                <!-- Awards -->
+                <section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Recognition</h2>
+
+    
+    <div class="mb-3">
+        <h3 class="font-semibold text-sm">Self-Taught Excellence</h3>
+        <p class="text-xs text-[var(--primary)]">27+ Years of Independent Learning</p>
+    </div>
+    
+    <div >
+        <h3 class="font-semibold text-sm">Industry Leadership</h3>
+        <p class="text-xs text-[var(--primary)]">Platform Engineering &amp; Infrastructure</p>
+    </div>
+    
+</section>
+            </div>
+            
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-8 text-center text-xs opacity-70">
+            <p>&copy; 2025 Daniel Bodnar. All rights reserved.</p>
+        </footer>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

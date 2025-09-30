@@ -1,5 +1,9 @@
 # The URL the site will be built for
+title = "Daniel Bodnar"
+description = "Daniel Bodnar | SRE / Infrastructure Engineer / Solutions Architect / Linux Evangelist"
 base_url = "https://daniel.bodnar.sh"
+
+theme = "bodnar-resume"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -13,4 +17,172 @@ build_search_index = true
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+# Personal Information
+name = "Daniel Bodnar"
+job_title = "SRE / Infrastructure Engineer / Solutions Architect / Linux Evangelist"
+bio = "Highly motivated, driven, and completely self-taught engineer with 27+ years experience as a full-stack software developer (since 1996) and over 18 years of Platform/Infrastructure engineering and IT automation. Interested in growth opportunities related to low-level Linux, networking, embedded development, and optimizations empowered by FPGA and programmable hardware."
+email = "daniel.bodnar@gmail.com"
+phone = "(260) 348-8789"
+location = "Denton, Texas"
+website = "https://bodnar.sh"
+
+# Work Experience
+[[extra.experience]]
+title = "Principal Software, DevOps, and Cloud Engineer"
+company = "Fidelity Investments"
+start_date = "2023"
+end_date = "2025"
+achievements = [
+    "Architected comprehensive AWS solutions for enterprise applications, including designing secure networking topologies and multi-account strategies",
+    "Developed and implemented robust IAM policies and CloudFormation templates adhering to strict financial industry security standards",
+    "Designed and built a full AWS CDK platform enabling teams to rapidly deploy standardized, compliant infrastructure",
+    "Engineered Kubernetes-based deployment solutions leveraging EKS, Helm charts, and custom operators for application management",
+    "Rebuilt and optimized the Jenkins Core platform, increasing build efficiency and reducing pipeline execution times",
+    "Created a cloud orchestration CLI tool that simplified cross-account resource management and deployment workflows"
+]
+
+[[extra.experience]]
+title = "Founder, Cloud Architect, CIO"
+company = "BitBuilder Cloud, LLC"
+start_date = "2021"
+end_date = "Present"
+achievements = [
+    "Launched a web hosting and cloud consulting private SaaS company using 5 highly customized AMD & Dell based co-located servers",
+    "Containerized and load-balanced several high-profile organizations with 1M+ global visitors/day",
+    "Single-handedly built core services on co-located custom bare metal 3rd-gen AMD-based servers with over 2TB RAM, 320 cores, 64TB enterprise-grade NVMe storage",
+    "Orchestrated global scaling via a multi-cloud hybrid overlay layer based on custom k8s distribution and buildroot and WolfiOS immutable linux operating systems"
+]
+
+[[extra.experience]]
+title = "SRE, SysAdmin, and Platforms Engineer"
+company = "RSVP & ACT, Inc"
+start_date = "2019"
+end_date = "2021"
+achievements = [
+    "Managed and performance-tuned +3.5TB postgresql database cluster, MySql and SQLite databases",
+    "Architected, deployed, and managed dynamically scaling, secure, and fully version-controlled hybrid and bare-metal kubernetes clusters",
+    "Deployed and managed self-hosted gitlab instance with DevOps build pipelines and automatic blue-green deployments",
+    "Implemented monitoring, alerting, logging, tracing, and observability tools"
+]
+
+[[extra.experience]]
+title = "IT Director"
+company = "Perspectives.org"
+start_date = "2018"
+end_date = "2019"
+achievements = [
+    "Developed 5 year vision, roadmap, and project plan to rebuild legacy monolithic .NET 3.5 application",
+    "Increased cloud hosting capacity by 10x while reducing budget by 50%",
+    "Reduced minimum page load time from 5 sec to an avg of 0.8s",
+    "Built a DRM-secured offline-enabled streaming video player desktop app in Go"
+]
+
+[[extra.experience]]
+title = "Professional Application Developer"
+company = "AT&T Corp."
+start_date = "2014"
+end_date = "2017"
+achievements = [
+    "Full stack application engineer building custom web-based tools and services",
+    "Managed entire project pipeline, from requirements gathering to production deployment",
+    "Led team-wide migration from rails/mysql stack to node.js, angular.js, and mongodb",
+    "Engineered a docker-based devops and deployment pipeline",
+    "Architected and built a large-scale external \"Order Status\" application and a decoupled \"microservice\" pipeline"
+]
+
+# Projects / Areas of Interest
+[[extra.projects]]
+title = "Low-level Linux & Embedded Development"
+description = "Deep interest in kernel-level optimizations, embedded systems, and hardware programming"
+technologies = ["Embedded Development", "FPGA", "Programmable Hardware"]
+
+[[extra.projects]]
+title = "Distributed Systems Architecture"
+description = "Passion for designing and building scalable, resilient distributed systems"
+technologies = ["Microservices", "Event-Driven Architecture", "Service Mesh"]
+
+[[extra.projects]]
+title = "Innovation & Emerging Technologies"
+description = "Early adopter focused on cutting-edge technologies and optimization techniques"
+technologies = ["Early Technology Adoption", "System Optimization", "Performance Engineering"]
+
+# Skills
+[[extra.skills]]
+name = "Linux Ecosystem & Platform Engineering"
+level = 98
+
+[[extra.skills]]
+name = "Containerization & Kubernetes"
+level = 95
+
+[[extra.skills]]
+name = "AWS Cloud Architecture & CDK"
+level = 93
+
+[[extra.skills]]
+name = "Infrastructure as Code (Terraform/Ansible)"
+level = 90
+
+[[extra.skills]]
+name = "Rust & Systems Programming"
+level = 88
+
+[[extra.skills]]
+name = "JavaScript/TypeScript & Node.js"
+level = 92
+
+[[extra.skills]]
+name = "Vue.js/Nuxt.js & Frontend Frameworks"
+level = 85
+
+[[extra.skills]]
+name = "Database Systems (PostgreSQL/SQLite/MongoDB)"
+level = 88
+
+[[extra.skills]]
+name = "Network Engineering & Security"
+level = 90
+
+[[extra.skills]]
+name = "Monitoring & Observability (Grafana/Prometheus)"
+level = 87
+
+[[extra.skills]]
+name = "DevOps & CI/CD Pipelines"
+level = 93
+
+# Education
+[[extra.education]]
+title = "Self-Taught Engineer"
+institution = "Completely Self-Taught"
+start_date = "1996"
+end_date = "Present"
+description = "27+ years of continuous learning and hands-on experience as a full-stack software developer and Platform/Infrastructure engineer. Expertise gained through practical application, experimentation, and staying current with emerging technologies."
+
+# Core Competencies / Certifications
+[[extra.certifications]]
+title = "Infrastructure Architecture"
+description = "Enterprise-grade platform design"
+
+[[extra.certifications]]
+title = "Cloud Engineering"
+description = "AWS, multi-cloud strategies"
+
+[[extra.certifications]]
+title = "Container Orchestration"
+description = "Kubernetes, Docker, custom distributions"
+
+# Languages
+[[extra.languages]]
+name = "English"
+level = "Native"
+proficiency = 100
+
+# Awards / Recognition
+[[extra.awards]]
+title = "Self-Taught Excellence"
+description = "27+ Years of Independent Learning"
+
+[[extra.awards]]
+title = "Industry Leadership"
+description = "Platform Engineering & Infrastructure"

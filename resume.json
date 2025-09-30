@@ -1,0 +1,205 @@
+{
+  "basics": {
+    "name": "Daniel Bodnar",
+    "label": "SRE / Infrastructure Engineer / Solutions Architect / Linux Evangelist",
+    "email": "daniel.bodnar@gmail.com",
+    "phone": "(260) 348-8789",
+    "website": "https://bodnar.sh",
+    "summary": "Highly motivated, driven, and completely self-taught engineer with 27+ years experience as a full-stack software developer (since 1996) and over 18 years of Platform/Infrastructure engineering and IT automation. Interested in growth opportunities related to low-level Linux, networking, embedded development, and optimizations empowered by FPGA and programmable hardware.",
+    "location": {
+      "city": "Denton",
+      "countryCode": "US",
+      "region": "Texas"
+    },
+    "profiles": []
+  },
+  "work": [
+    {
+      "company": "Fidelity Investments",
+      "position": "Principal Software, DevOps, and Cloud Engineer",
+      "startDate": "2023-07-01",
+      "endDate": "2025-01-01",
+      "highlights": [
+        "Architected comprehensive AWS solutions for enterprise applications, including designing secure networking topologies and multi-account strategies",
+        "Developed and implemented robust IAM policies and CloudFormation templates adhering to strict financial industry security standards",
+        "Designed and built a full AWS CDK platform enabling teams to rapidly deploy standardized, compliant infrastructure",
+        "Engineered Kubernetes-based deployment solutions leveraging EKS, Helm charts, and custom operators for application management",
+        "Rebuilt and optimized the Jenkins Core platform, increasing build efficiency and reducing pipeline execution times",
+        "Created a cloud orchestration CLI tool that simplified cross-account resource management and deployment workflows",
+        "Successfully deployed and managed Discourse forums on Alpine Linux containers in Kubernetes, ensuring high availability and performance",
+        "Implemented infrastructure-as-code practices across multiple teams, significantly reducing configuration drift and deployment errors",
+        "Designed and implemented automated security scanning and compliance checking within CI/CD pipelines",
+        "Led knowledge-sharing sessions and developed documentation to elevate team capabilities in cloud-native technologies"
+      ]
+    },
+    {
+      "company": "BitBuilder Cloud, LLC",
+      "position": "Founder, Cloud Architect, CIO",
+      "startDate": "2021-06-01",
+      "highlights": [
+        "Launched a web hosting and cloud consulting private SaaS company using 5 highly customized AMD & Dell based co-located servers",
+        "Containerized and load-balanced several high-profile organizations with 1M+ global visitors/day",
+        "Single-handedly built core services on co-located custom bare metal 3rd-gen AMD-based servers with over 2TB RAM, 320 cores, 64TB enterprise-grade NVMe storage, and quad-port 25Gb/s ethernet + dual-port 100Gbe mellanox connectx-5 (OCP) NICs",
+        "Orchestrated global scaling via a multi-cloud hybrid overlay layer based on custom k8s distribution and buildroot and WolfiOS (alpine-based) immutable linux operating systems",
+        "Implemented constant monitoring and observability using Grafana, Prometheus, VictoriaMetrics, NetData, Jaeger"
+      ]
+    },
+    {
+      "company": "RSVP & ACT, Inc",
+      "position": "SRE, SysAdmin, and Platforms Engineer",
+      "startDate": "2019-04-01",
+      "endDate": "2021-06-01",
+      "highlights": [
+        "Managed and performance-tuned +3.5TB postgresql database cluster, MySql and SQLite databases",
+        "Architected, deployed, and managed dynamically scaling, secure, and fully version-controlled hybrid and bare-metal kubernetes clusters",
+        "Deployed and managed self-hosted gitlab instance with DevOps build pipelines and automatic blue-green deployments",
+        "Implemented monitoring, alerting, logging, tracing, and observability tools",
+        "Implemented and enforced gitlab-based Infrastructure-as-Code procedures and pipelines",
+        "Deployed and managed multiple host, network, and container security tools and vulnerability scanners",
+        "Simplified and standardized hypervisors with a centralized Proxmox cluster on ZFS and a 56G InfiniBand FC SAN",
+        "Deployed W2019 AD server environment for centralized user account management",
+        "Implemented organization-wide VPN, VLANS, and security measures",
+        "Provided training to address knowledge-gaps and mitigated ransomware hacks"
+      ]
+    },
+    {
+      "company": "Perspectives.org",
+      "position": "IT Director",
+      "startDate": "2018-01-01",
+      "endDate": "2019-04-01",
+      "highlights": [
+        "Developed 5 year vision, roadmap, and project plan to rebuild legacy monolithic .NET 3.5 application",
+        "Increased cloud hosting capacity by 10x while reducing budget by 50%",
+        "Reduced minimum page load time from 5 sec to an avg of 0.8s",
+        "Built a DRM-secured offline-enabled streaming video player desktop app in Go"
+      ]
+    },
+    {
+      "company": "AT&T Corp.",
+      "position": "Professional Application Developer",
+      "startDate": "2014-03-01",
+      "endDate": "2017-06-01",
+      "highlights": [
+        "Full stack application engineer building custom web-based tools and services",
+        "Managed entire project pipeline, from requirements gathering to production deployment",
+        "Led team-wide migration from rails/mysql stack to node.js, angular.js, and mongodb",
+        "Engineered a docker-based devops and deployment pipeline",
+        "Architected and built a large-scale external \"Order Status\" application and a decoupled \"microservice\" pipeline"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "name": "Linux Ecosystem",
+      "level": "Expert",
+      "keywords": ["Linux", "Shell Scripting", "Containerization", "Kernel-level Optimizations", "SRE", "Platform Engineering", "Network Engineering"]
+    },
+    {
+      "name": "Operating Systems",
+      "level": "Expert",
+      "keywords": ["Alpine", "Debian", "Ubuntu Server", "Arch", "FreeBSD", "WolfiOS"]
+    },
+    {
+      "name": "Containerization/Orchestration",
+      "level": "Expert",
+      "keywords": ["Docker", "Linux containers", "Kubernetes", "Buildroot", "DevContainers", "LocalStack"]
+    },
+    {
+      "name": "Languages",
+      "level": "Expert",
+      "keywords": ["Rust", "JavaScript", "TypeScript", "Bash", "Shell"]
+    },
+    {
+      "name": "Frontend Frameworks",
+      "level": "Expert",
+      "keywords": ["Vue.js", "Nuxt.js", "Svelte", "SolidJS", "Alpine.js"]
+    },
+    {
+      "name": "Backend",
+      "level": "Expert",
+      "keywords": ["Node.js", "Rust"]
+    },
+    {
+      "name": "Infrastructure",
+      "level": "Expert",
+      "keywords": ["Terraform", "Ansible", "GitLab CI/CD", "GitHub Actions"]
+    },
+    {
+      "name": "Databases",
+      "level": "Expert",
+      "keywords": ["PostgreSQL", "SQLite", "DuckDB", "MongoDB", "MySQL"]
+    },
+    {
+      "name": "Networking",
+      "level": "Expert",
+      "keywords": ["WireGuard", "ZeroTier", "Tailscale", "OpenVPN", "Layer 2/3", "BGP"]
+    },
+    {
+      "name": "API Development",
+      "level": "Expert",
+      "keywords": ["OpenAPI", "JSON Schema", "RESTful API design"]
+    },
+    {
+      "name": "Configuration Languages",
+      "level": "Expert",
+      "keywords": ["Cue", "Dhall", "YAML"]
+    },
+    {
+      "name": "Cloud Platforms",
+      "level": "Expert",
+      "keywords": ["AWS", "AWS CDK", "CloudFormation", "IAM", "EKS", "GCP", "Multi-cloud strategy"]
+    },
+    {
+      "name": "Monitoring & Observability",
+      "level": "Expert",
+      "keywords": ["Grafana", "Prometheus", "VictoriaMetrics", "NetData", "Jaeger", "ELK Stack", "Distributed Tracing"]
+    },
+    {
+      "name": "Security",
+      "level": "Expert",
+      "keywords": ["Zero-trust architecture", "Vulnerability Scanning", "Intrusion Detection", "VPN", "Traffic Analysis"]
+    },
+    {
+      "name": "Architecture Patterns",
+      "level": "Expert",
+      "keywords": ["Microservices", "Distributed Systems", "API Gateway", "Service Mesh", "Event-Driven Architecture", "CQRS"]
+    },
+    {
+      "name": "DevOps & Automation",
+      "level": "Expert",
+      "keywords": ["CI/CD Pipelines", "GitOps", "Infrastructure as Code", "Self-healing Systems", "Auto-scaling"]
+    }
+  ],
+  "meta": {
+    "theme": "techStack",
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  },
+  "interests": [
+    {
+      "name": "Low-level Linux",
+      "keywords": ["Embedded Development", "FPGA", "Programmable Hardware"]
+    },
+    {
+      "name": "System Architecture",
+      "keywords": ["Distributed Systems", "Microservice Architecture", "Scalable Systems"]
+    },
+    {
+      "name": "Innovation",
+      "keywords": ["Early Technology Adoption", "Emerging Technologies"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native"
+    }
+  ],
+  "education": [],
+  "volunteer": [],
+  "awards": [],
+  "publications": [],
+  "references": [],
+  "projects": []
+  
+}
