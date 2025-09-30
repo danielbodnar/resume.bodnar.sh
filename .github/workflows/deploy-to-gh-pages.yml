@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build only
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
@@ -26,6 +29,9 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v4
+        with:
+          submodules: recursive
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Build and deploy
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
