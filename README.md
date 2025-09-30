@@ -11,6 +11,7 @@ A modern, responsive single-page resume website built with [Zola](https://getzol
 - 💼 **Professional Layout** - Clean, modern design with Font Awesome icons
 - 🎨 **Multiple Color Themes** - Blue, Purple, and Amber color schemes
 
+
 ## Tech Stack
 
 - **Zola 0.21.0** - Static site generator (Rust-based)
