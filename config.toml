@@ -1,7 +1,7 @@
 # The URL the site will be built for
 title = "Daniel Bodnar"
-description = "Daniel Bodnar | SRE / Infrastructure Engineer / Solutions Architect / Linux Evangelist"
-base_url = "https://resume.bodnar.sh"
+description = "Daniel Bodnar | Platform Engineer | Systems Architect | SRE | Linux Evangelist | Emerging Technologist"
+base_url = "https://daniel.bodnar.sh"
 
 theme = "bodnar-resume"
 
@@ -12,69 +12,84 @@ compile_sass = true
 build_search_index = true
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
+# Markdown configuration
 
 [extra]
 # Personal Information
 name = "Daniel Bodnar"
-job_title = "SRE / Infrastructure Engineer / Solutions Architect / Linux Evangelist"
-bio = "Highly motivated, driven, and completely self-taught engineer with 27+ years experience as a full-stack software developer (since 1996) and over 18 years of Platform/Infrastructure engineering and IT automation. Interested in growth opportunities related to low-level Linux, networking, embedded development, and optimizations empowered by FPGA and programmable hardware."
-email = "daniel.bodnar@gmail.com"
-phone = "(260) 348-8789"
-location = "Denton, Texas"
-website = "https://bodnar.sh"
+job_title = "Platform Engineer | Systems Architect | SRE | Linux Evangelist | Emerging Technologist"
+bio = """A full stack software engineer, sysadmin, platforms engineer and cloud architect who has been building web applications since February of 2000. My greatest strength isn't my current knowledge or prior experience, but my ability to quickly grasp new concepts by diving into the deep end and bringing order out of chaos. I've spent my career refusing to stay in one lane—my expertise spans the entire software engineering ecosystem, from low-level systems programming and infrastructure automation to application development and enterprise architecture. This breadth lets me identify solutions that specialists confined to a single domain cannot. I thrive in fast-paced environments that demand continual learning, and I enjoy identifying abstract connections. This has served me well in high-pressure situations where understanding root cause quickly means the difference between a minor incident and a major outage."""
+email = "daniel@bodnar.sh"
+phone = "(940) 247-0019"
+location = "Corinth, Texas"
+website = "https://daniel.bodnar.sh"
+
+# Social Profiles
+github = "https://github.com/danielbodnar"
+website_alt = "https://bodnar.sh"
+business_website = "https://bitbuilder.cloud"
 
 # Work Experience
+[[extra.experience]]
+title = "Founder, Cloud Architect, CIO"
+company = "BitBuilder Cloud & Consulting, LLC"
+start_date = "2021"
+end_date = "Present"
+achievements = [
+    "Founded a cloud hosting and consulting SaaS company providing vendor-agnostic, end-to-end encrypted, highly-available infrastructure for organizations requiring resilient, security-first platforms",
+    "Containerized and load-balanced several high-profile organizations with 1M+ global visitors/day",
+    "Multi-cloud hybrid overlay layer based on custom Kubernetes distribution and immutable Linux systems",
+    "Comprehensive observability stack using Grafana, Prometheus, VictoriaMetrics, NetData, and Jaeger",
+    "Manage consulting accounts for small businesses: Neal & Neal Insurance and Maybach Systems, including systems and infrastructure architecture, security and incident mitigation",
+    "Technologies: Proxmox, Kubernetes, Docker, Linux, Bare Metal, ZFS, NVMe, Grafana, Prometheus, VictoriaMetrics, NetData, Jaeger, Load Balancing, Multi-cloud, Hybrid Infrastructure, E2E Encryption"
+]
+
 [[extra.experience]]
 title = "Principal Software, DevOps, and Cloud Engineer"
 company = "Fidelity Investments"
 start_date = "2023"
 end_date = "2025"
 achievements = [
-    "Architected comprehensive AWS solutions for enterprise applications, including designing secure networking topologies and multi-account strategies",
-    "Developed and implemented robust IAM policies and CloudFormation templates adhering to strict financial industry security standards",
-    "Designed and built a full AWS CDK platform enabling teams to rapidly deploy standardized, compliant infrastructure",
-    "Engineered Kubernetes-based deployment solutions leveraging EKS, Helm charts, and custom operators for application management",
+    "Designed and built a full AWS CDK platform enabling various teams to rapidly deploy standardized, compliant infrastructure, reducing provisioning time",
     "Rebuilt and optimized the Jenkins Core platform, increasing build efficiency and reducing pipeline execution times",
-    "Created a cloud orchestration CLI tool that simplified cross-account resource management and deployment workflows"
-]
-
-[[extra.experience]]
-title = "Founder, Cloud Architect, CIO"
-company = "BitBuilder Cloud, LLC"
-start_date = "2021"
-end_date = "Present"
-achievements = [
-    "Launched a web hosting and cloud consulting private SaaS company using 5 highly customized AMD & Dell based co-located servers",
-    "Containerized and load-balanced several high-profile organizations with 1M+ global visitors/day",
-    "Single-handedly built core services on co-located custom bare metal 3rd-gen AMD-based servers with over 2TB RAM, 320 cores, 64TB enterprise-grade NVMe storage",
-    "Orchestrated global scaling via a multi-cloud hybrid overlay layer based on custom k8s distribution and buildroot and WolfiOS immutable linux operating systems"
+    "Architected comprehensive AWS solutions for enterprise applications, including secure networking topologies and multi-account strategies adhering to strict financial industry security standards",
+    "Engineered Kubernetes-based deployment solutions leveraging EKS, Helm charts, and custom operators, supporting production applications",
+    "Created a cloud orchestration CLI tool that simplified cross-account resource management, eliminating manual processes and bottlenecks",
+    "Implemented infrastructure-as-code practices across several teams, reducing configuration drift and deployment errors",
+    "Designed and implemented automated security scanning and compliance checking within CI/CD pipelines",
+    "Led knowledge-sharing sessions and developed documentation to elevate team capabilities in cloud-native technologies",
+    "Technologies: AWS, AWS CDK, CloudFormation, Kubernetes, EKS, Helm, Jenkins, Docker, IAM, Terraform, Python, Node.js, Infrastructure-as-Code, CI/CD"
 ]
 
 [[extra.experience]]
 title = "SRE, SysAdmin, and Platforms Engineer"
-company = "RSVP & ACT, Inc"
+company = "Animal Care Technologies, INC"
 start_date = "2019"
 end_date = "2021"
 achievements = [
-    "Managed and performance-tuned +3.5TB postgresql database cluster, MySql and SQLite databases",
-    "Architected, deployed, and managed dynamically scaling, secure, and fully version-controlled hybrid and bare-metal kubernetes clusters",
-    "Deployed and managed self-hosted gitlab instance with DevOps build pipelines and automatic blue-green deployments",
-    "Implemented monitoring, alerting, logging, tracing, and observability tools"
+    "Architected, deployed, and managed dynamically scaling bare-metal Kubernetes clusters; led all migrations from legacy systems to Kubernetes",
+    "Managed and performance-tuned 3.5TB+ PostgreSQL database cluster, plus numerous MySQL and SQLite databases",
+    "Mitigated two ransomware attacks within the first month of employment, then implemented organization-wide security measures including Wireguard VPN, VLANs, and zero-trust access for third-party developers",
+    "Deployed self-hosted GitLab with DevOps pipelines and automatic blue-green deployments, implementing Infrastructure-as-Code using Terraform, Packer, and Ansible",
+    "Consolidated disparate hypervisors into a centralized Proxmox cluster on ZFS with 56G InfiniBand FC SAN",
+    "Implemented comprehensive observability (Grafana, Loki, Prometheus, Jaeger, ELK, Zabbix) to preemptively identify bottlenecks and capacity constraints",
+    "Technologies: Kubernetes, PostgreSQL, GitLab, Docker, Proxmox, ZFS, InfiniBand, Ansible, Terraform, Wireguard, cri-o, containerd, haproxy, nginx, traefik, Helm"
 ]
 
 [[extra.experience]]
 title = "IT Director"
 company = "Perspectives.org"
-start_date = "2018"
+start_date = "2017"
 end_date = "2019"
 achievements = [
-    "Developed 5 year vision, roadmap, and project plan to rebuild legacy monolithic .NET 3.5 application",
+    "Led IT operations for an international non-profit providing in person college-level courses serving 10,000+ students annually across 250+ classes worldwide",
     "Increased cloud hosting capacity by 10x while reducing budget by 50%",
-    "Reduced minimum page load time from 5 sec to an avg of 0.8s",
-    "Built a DRM-secured offline-enabled streaming video player desktop app in Go"
+    "Reduced page load times from 5 seconds to 0.8 seconds average",
+    "Developed 5-year roadmap to rebuild legacy monolithic .NET 3.5 application into micro-service architecture",
+    "Built a DRM-secured, offline-enabled streaming video player desktop app in Go for classes with unreliable internet",
+    "Led IT team, support department, and India-based development team",
+    "Volunteer Contributions (2012-2014): Created an online Learning Management System from scratch, reducing administrative overhead by 90% and architected horizontally scaling container orchestration platform (Docker, Rancher, AWS Spot Instances) to handle traffic spikes",
+    "Technologies: Go, Docker, Rancher, AWS, iPXE, .NET, Performance Optimization, LMS"
 ]
 
 [[extra.experience]]
@@ -83,94 +98,111 @@ company = "AT&T Corp."
 start_date = "2014"
 end_date = "2017"
 achievements = [
-    "Full stack application engineer building custom web-based tools and services",
-    "Managed entire project pipeline, from requirements gathering to production deployment",
-    "Led team-wide migration from rails/mysql stack to node.js, angular.js, and mongodb",
-    "Engineered a docker-based devops and deployment pipeline",
-    "Architected and built a large-scale external \"Order Status\" application and a decoupled \"microservice\" pipeline"
+    "Full stack engineer building internal tools and services, managing the complete project lifecycle from requirements gathering through production deployment",
+    "Architected and built a large-scale external \"Order Status\" application aggregating data from 12+ legacy sources (including screen-scraped systems)",
+    "Led team-wide migration from Rails/MySQL to Node.js, Angular.js, and MongoDB, reducing prototype development time significantly",
+    "Engineered Docker-based DevOps pipeline that improved deployment reliability and developer productivity",
+    "Mastered functional programming in JavaScript to build high-performance, parallel-worker pipelines in an asynchronous language",
+    "Technologies: Node.js, Angular.js, MongoDB, Docker, Rails, MySQL, JavaScript, Functional Programming, Microservices, REST APIs"
+]
+
+[[extra.experience]]
+title = "Owner / IT Consultant"
+company = "TACC Support"
+start_date = "2007"
+end_date = "2014"
+achievements = [
+    "Owned and operated a local computer repair, IT consulting, and MSP company with physical storefront for 5+ years, managing a staff of 5 employees. Later evolved into small business IT and Systems Architect Consulting",
+    "Full company name: Technicians Against Computer Cruelty",
+    "Provided computer repair, network administration, and infrastructure systems architecting for several small businesses accounts: Babes Chicken, Justin Boots, Paddock Farms, DIAB Inc.",
+    "Virtualized the entire US-based multi-site server infrastructure (~30 bare-metal servers) onto ESXi for international plastics manufacturing company, DIAB Inc."
 ]
 
 # Projects / Areas of Interest
 [[extra.projects]]
-title = "Low-level Linux & Embedded Development"
+title = "Low-level Linux"
 description = "Deep interest in kernel-level optimizations, embedded systems, and hardware programming"
 technologies = ["Embedded Development", "FPGA", "Programmable Hardware"]
 
 [[extra.projects]]
-title = "Distributed Systems Architecture"
+title = "System Architecture"
 description = "Passion for designing and building scalable, resilient distributed systems"
-technologies = ["Microservices", "Event-Driven Architecture", "Service Mesh"]
+technologies = ["Distributed Systems", "Microservice Architecture", "Scalable Systems"]
 
 [[extra.projects]]
-title = "Innovation & Emerging Technologies"
+title = "Innovation"
 description = "Early adopter focused on cutting-edge technologies and optimization techniques"
-technologies = ["Early Technology Adoption", "System Optimization", "Performance Engineering"]
+technologies = ["Early Technology Adoption", "Emerging Technologies"]
 
 # Skills
 [[extra.skills]]
-name = "Linux Ecosystem & Platform Engineering"
+name = "Linux Ecosystem"
 level = 98
 
 [[extra.skills]]
-name = "Containerization & Kubernetes"
+name = "Containerization/Orchestration"
 level = 95
 
 [[extra.skills]]
-name = "AWS Cloud Architecture & CDK"
+name = "Cloud Platforms (AWS/GCP)"
 level = 93
 
 [[extra.skills]]
-name = "Infrastructure as Code (Terraform/Ansible)"
+name = "Infrastructure (Terraform/Ansible)"
 level = 90
 
 [[extra.skills]]
-name = "Rust & Systems Programming"
-level = 88
-
-[[extra.skills]]
-name = "JavaScript/TypeScript & Node.js"
+name = "Languages (Rust/TypeScript/Bash)"
 level = 92
 
 [[extra.skills]]
-name = "Vue.js/Nuxt.js & Frontend Frameworks"
+name = "Frontend Frameworks (Vue/Svelte/SolidJS)"
 level = 85
 
 [[extra.skills]]
-name = "Database Systems (PostgreSQL/SQLite/MongoDB)"
+name = "Databases (PostgreSQL/SQLite/MongoDB)"
 level = 88
 
 [[extra.skills]]
-name = "Network Engineering & Security"
+name = "Networking & Security"
 level = 90
 
 [[extra.skills]]
-name = "Monitoring & Observability (Grafana/Prometheus)"
+name = "Monitoring & Observability"
 level = 87
 
 [[extra.skills]]
 name = "DevOps & CI/CD Pipelines"
 level = 93
 
+[[extra.skills]]
+name = "Architecture Patterns"
+level = 90
+
 # Education
 [[extra.education]]
 title = "Self-Taught Engineer"
-institution = "Completely Self-Taught"
-start_date = "1996"
+institution = "Continuous Learning & Hands-on Experience"
+start_date = "2000"
 end_date = "Present"
-description = "27+ years of continuous learning and hands-on experience as a full-stack software developer and Platform/Infrastructure engineer. Expertise gained through practical application, experimentation, and staying current with emerging technologies."
+description = "Full stack software engineer building web applications since February 2000. Expertise spans the entire software engineering ecosystem from low-level systems programming and infrastructure automation to application development and enterprise architecture."
 
 # Core Competencies / Certifications
 [[extra.certifications]]
-title = "Infrastructure Architecture"
-description = "Enterprise-grade platform design"
+title = "Linux Ecosystem"
+description = "Shell Scripting, Containerization, Kernel-level Optimizations, SRE, Platform Engineering"
 
 [[extra.certifications]]
 title = "Cloud Engineering"
-description = "AWS, multi-cloud strategies"
+description = "AWS, AWS CDK, CloudFormation, IAM, EKS, GCP, Multi-cloud strategy"
 
 [[extra.certifications]]
 title = "Container Orchestration"
-description = "Kubernetes, Docker, custom distributions"
+description = "Docker, Linux containers, Kubernetes, Buildroot, DevContainers"
+
+[[extra.certifications]]
+title = "Security"
+description = "Zero-trust architecture, Vulnerability Scanning, Intrusion Detection, VPN, Traffic Analysis"
 
 # Languages
 [[extra.languages]]
@@ -181,8 +213,21 @@ proficiency = 100
 # Awards / Recognition
 [[extra.awards]]
 title = "Self-Taught Excellence"
-description = "27+ Years of Independent Learning"
+description = "25+ Years of Independent Learning since 2000"
 
 [[extra.awards]]
-title = "Industry Leadership"
-description = "Platform Engineering & Infrastructure"
+title = "Full-Stack Expertise"
+description = "Systems Programming to Enterprise Architecture"
+
+# Volunteer Experience
+[[extra.volunteer]]
+organization = "Perspectives.org"
+position = "IT Volunteer"
+start_date = "2012"
+end_date = "2014"
+highlights = [
+    "Redesigned and developed a modern-replacement for perspectives.org home page",
+    "Created a simple, highly streamlined and intuitive online Learning Management System from scratch",
+    "Reduced overhead by over 90%",
+    "Deployed LMS tool to all Texas-based classes and architected automatic container orchestration platform"
+]
