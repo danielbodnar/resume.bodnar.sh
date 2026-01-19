@@ -84,7 +84,7 @@ All templates use Tera templating engine with variables from `config.toml`:
 
 ## Deployment
 
-The site is configured for deployment to `https://daniel.bodnar.sh`. Common deployment targets:
+The site is configured for deployment to `https://resume.bodnar.sh`. Common deployment targets:
 
 - **GitHub Pages**: Deploy from `public/` folder after `zola build`
 - **Vercel**: Auto-deploy with build command `zola build` and output directory `public`

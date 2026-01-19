@@ -137,7 +137,7 @@ The theme uses dynamic Tera templates that automatically render content from `co
 
 ## Deployment
 
-The site is configured for deployment to `https://daniel.bodnar.sh`.
+The site is configured for deployment to `https://resume.bodnar.sh`.
 
 ### Build Command
 
