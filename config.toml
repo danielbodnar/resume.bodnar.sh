@@ -137,47 +137,63 @@ technologies = ["Early Technology Adoption", "Emerging Technologies"]
 # Skills
 [[extra.skills]]
 name = "Linux Ecosystem"
-level = 98
+keywords = ["Linux", "Shell Scripting", "Containerization", "Kernel-level Optimizations", "SRE", "Platform Engineering", "Network Engineering"]
+
+[[extra.skills]]
+name = "Operating Systems"
+keywords = ["Alpine", "Debian", "Ubuntu Server", "Arch", "FreeBSD", "WolfiOS"]
 
 [[extra.skills]]
 name = "Containerization/Orchestration"
-level = 95
+keywords = ["Docker", "Linux containers", "Kubernetes", "Buildroot", "DevContainers", "LocalStack"]
 
 [[extra.skills]]
-name = "Cloud Platforms (AWS/GCP)"
-level = 93
+name = "Languages"
+keywords = ["Rust", "JavaScript", "TypeScript", "Bash", "Shell"]
 
 [[extra.skills]]
-name = "Infrastructure (Terraform/Ansible)"
-level = 90
+name = "Frontend Frameworks"
+keywords = ["Vue.js", "Nuxt.js", "Svelte", "SolidJS", "Alpine.js"]
 
 [[extra.skills]]
-name = "Languages (Rust/TypeScript/Bash)"
-level = 92
+name = "Backend"
+keywords = ["Node.js", "Rust"]
 
 [[extra.skills]]
-name = "Frontend Frameworks (Vue/Svelte/SolidJS)"
-level = 85
+name = "Infrastructure"
+keywords = ["Terraform", "Ansible", "GitLab CI/CD", "GitHub Actions"]
 
 [[extra.skills]]
-name = "Databases (PostgreSQL/SQLite/MongoDB)"
-level = 88
+name = "Databases"
+keywords = ["PostgreSQL", "SQLite", "DuckDB", "MongoDB", "MySQL"]
 
 [[extra.skills]]
-name = "Networking & Security"
-level = 90
+name = "Networking"
+keywords = ["WireGuard", "ZeroTier", "Tailscale", "OpenVPN", "Layer 2/3", "BGP"]
+
+[[extra.skills]]
+name = "API Development"
+keywords = ["OpenAPI", "JSON Schema", "RESTful API design"]
+
+[[extra.skills]]
+name = "Cloud Platforms"
+keywords = ["AWS", "AWS CDK", "CloudFormation", "IAM", "EKS", "GCP", "Multi-cloud strategy"]
 
 [[extra.skills]]
 name = "Monitoring & Observability"
-level = 87
+keywords = ["Grafana", "Prometheus", "VictoriaMetrics", "NetData", "Jaeger", "ELK Stack", "Distributed Tracing"]
 
 [[extra.skills]]
-name = "DevOps & CI/CD Pipelines"
-level = 93
+name = "Security"
+keywords = ["Zero-trust architecture", "Vulnerability Scanning", "Intrusion Detection", "VPN", "Traffic Analysis"]
 
 [[extra.skills]]
 name = "Architecture Patterns"
-level = 90
+keywords = ["Microservices", "Distributed Systems", "API Gateway", "Service Mesh", "Event-Driven Architecture", "CQRS"]
+
+[[extra.skills]]
+name = "DevOps & Automation"
+keywords = ["CI/CD Pipelines", "GitOps", "Infrastructure as Code", "Self-healing Systems", "Auto-scaling"]
 
 # Education
 [[extra.education]]
