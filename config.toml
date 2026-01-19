@@ -1,7 +1,7 @@
 # The URL the site will be built for
 title = "Daniel Bodnar"
 description = "Daniel Bodnar | Platform Engineer | Systems Architect | SRE | Linux Evangelist | Emerging Technologist"
-base_url = "https://daniel.bodnar.sh"
+base_url = "https://resume.bodnar.sh"
 
 theme = "bodnar-resume"
 
