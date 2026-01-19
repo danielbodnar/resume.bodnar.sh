@@ -1,0 +1,14 @@
+<section class="resume-section">
+  <h2 class="resume-section-title">Interests</h2>
+
+  <div class="projects-grid">
+    {% for project in config.extra.projects %}
+    <div class="project-item">
+      <strong>{{ project.title }}</strong>: {{ project.description }}
+      {% if project.technologies %}
+      <br><em>{{ project.technologies | join(sep=", ") }}</em>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+</section>

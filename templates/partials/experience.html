@@ -1,0 +1,23 @@
+<section class="resume-section">
+  <h2 class="resume-section-title">Experience</h2>
+
+  {% for job in config.extra.experience %}
+  <div class="experience-item">
+    <div class="experience-header">
+      <h3 class="experience-title">{{ job.title }}</h3>
+      <div class="experience-date">{{ job.start_date }} - {{ job.end_date }}</div>
+    </div>
+    <div class="experience-company">{{ job.company }}</div>
+    {% if job.summary %}
+    <p class="experience-summary">{{ job.summary }}</p>
+    {% endif %}
+    {% if job.achievements %}
+    <ul class="experience-highlights">
+      {% for achievement in job.achievements %}
+      <li>{{ achievement }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  {% endfor %}
+</section>

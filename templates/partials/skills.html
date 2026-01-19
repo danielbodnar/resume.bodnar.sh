@@ -1,0 +1,12 @@
+<section class="resume-section">
+  <h2 class="resume-section-title">Skills</h2>
+
+  <div class="skills-grid">
+    {% for skill in config.extra.skills %}
+    <div class="skill-row">
+      <span class="skill-name">{{ skill.name }}</span>
+      <span class="skill-keywords">{{ skill.keywords | join(sep=", ") }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>

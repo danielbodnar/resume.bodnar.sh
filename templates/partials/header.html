@@ -1,0 +1,28 @@
+<header class="resume-header">
+  <h1 class="resume-name">{{ config.extra.name }}</h1>
+  <div class="resume-title">{{ config.extra.job_title }}</div>
+  <div class="resume-contact">
+    <div class="resume-contact-item">
+      <span class="resume-contact-icon">&#9993;</span>
+      <a href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
+    </div>
+    <div class="resume-contact-item">
+      <span class="resume-contact-icon">&#9742;</span>
+      <span>{{ config.extra.phone }}</span>
+    </div>
+    <div class="resume-contact-item">
+      <span class="resume-contact-icon">&#8962;</span>
+      <span>{{ config.extra.location }}</span>
+    </div>
+    {% if config.extra.github %}
+    <div class="resume-contact-item">
+      <span class="resume-contact-icon">&#9881;</span>
+      <a href="{{ config.extra.github }}">{{ config.extra.github | replace(from="https://", to="") }}</a>
+    </div>
+    {% endif %}
+    <div class="resume-contact-item">
+      <span class="resume-contact-icon">&#127760;</span>
+      <a href="{{ config.extra.website }}">{{ config.extra.website | replace(from="https://", to="") }}</a>
+    </div>
+  </div>
+</header>
