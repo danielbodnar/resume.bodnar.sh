@@ -1,0 +1,10 @@
+<section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Core Competencies</h2>
+
+    {% for cert in config.extra.certifications %}
+    <div {% if not loop.last %}class="mb-4"{% endif %}>
+        <h3 class="font-semibold text-sm">{{ cert.title }}</h3>
+        <p class="text-xs text-[var(--primary)]">{{ cert.description }}</p>
+    </div>
+    {% endfor %}
+</section>

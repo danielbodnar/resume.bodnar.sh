@@ -1,0 +1,14 @@
+<section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Education & Background</h2>
+
+    {% for edu in config.extra.education %}
+    <div {% if not loop.last %}class="mb-6"{% endif %}>
+        <div class="flex justify-between items-start">
+            <h3 class="font-semibold">{{ edu.title }}</h3>
+            <span class="text-xs bg-[var(--primary)] text-white px-2 py-1 rounded">{{ edu.start_date }} - {{ edu.end_date }}</span>
+        </div>
+        <p class="text-sm text-[var(--primary)] mb-2">{{ edu.institution }}</p>
+        <p class="text-sm">{{ edu.description }}</p>
+    </div>
+    {% endfor %}
+</section>

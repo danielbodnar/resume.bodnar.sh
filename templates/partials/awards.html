@@ -1,0 +1,10 @@
+<section class="resume-section bg-[var(--card)] p-6 rounded-lg shadow-sm">
+    <h2 class="text-xl font-bold mb-4 border-b pb-2 border-[var(--primary)]">Recognition</h2>
+
+    {% for award in config.extra.awards %}
+    <div {% if not loop.last %}class="mb-3"{% endif %}>
+        <h3 class="font-semibold text-sm">{{ award.title }}</h3>
+        <p class="text-xs text-[var(--primary)]">{{ award.description }}</p>
+    </div>
+    {% endfor %}
+</section>
