@@ -3,8 +3,6 @@ title = "Daniel Bodnar"
 description = "Daniel Bodnar | Platform Engineer | Systems Architect | SRE | Linux Evangelist | Emerging Technologist"
 base_url = "https://resume.bodnar.sh"
 
-theme = "bodnar-resume"
-
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
 
