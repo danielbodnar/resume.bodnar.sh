@@ -31,90 +31,91 @@ business_website = "https://bitbuilder.cloud"
 [[extra.experience]]
 title = "Founder, Cloud Architect, CIO"
 company = "BitBuilder Cloud & Consulting, LLC"
-start_date = "2021"
+start_date = "May 2021"
 end_date = "Present"
+summary = "Founded a cloud hosting and consulting SaaS company providing vendor-agnostic, end-to-end encrypted, highly-available infrastructure for organizations requiring resilient, security-first platforms"
 achievements = [
-    "Founded a cloud hosting and consulting SaaS company providing vendor-agnostic, end-to-end encrypted, highly-available infrastructure for organizations requiring resilient, security-first platforms",
     "Containerized and load-balanced several high-profile organizations with 1M+ global visitors/day",
     "Multi-cloud hybrid overlay layer based on custom Kubernetes distribution and immutable Linux systems",
     "Comprehensive observability stack using Grafana, Prometheus, VictoriaMetrics, NetData, and Jaeger",
-    "Manage consulting accounts for small businesses: Neal & Neal Insurance and Maybach Systems, including systems and infrastructure architecture, security and incident mitigation",
-    "Technologies: Proxmox, Kubernetes, Docker, Linux, Bare Metal, ZFS, NVMe, Grafana, Prometheus, VictoriaMetrics, NetData, Jaeger, Load Balancing, Multi-cloud, Hybrid Infrastructure, E2E Encryption"
+    "Manage consulting accounts for small businesses: Neal & Neal Insurance and Maybach Systems, including systems and infrastructure architecture, security and incident mitigation"
 ]
+technologies = ["Proxmox", "Kubernetes", "Docker", "Linux", "Bare Metal", "ZFS", "NVMe", "Grafana", "Prometheus", "VictoriaMetrics", "NetData", "Jaeger", "Load Balancing", "Multi-cloud", "Hybrid Infrastructure", "E2E Encryption"]
 
 [[extra.experience]]
 title = "Principal Software, DevOps, and Cloud Engineer"
 company = "Fidelity Investments"
-start_date = "2023"
-end_date = "2025"
+start_date = "Jul 2023"
+end_date = "Mar 2025"
+summary = "Designed and built a full AWS CDK platform enabling various teams to rapidly deploy standardized, compliant infrastructure, reducing provisioning time"
 achievements = [
-    "Designed and built a full AWS CDK platform enabling various teams to rapidly deploy standardized, compliant infrastructure, reducing provisioning time",
     "Rebuilt and optimized the Jenkins Core platform, increasing build efficiency and reducing pipeline execution times",
     "Architected comprehensive AWS solutions for enterprise applications, including secure networking topologies and multi-account strategies adhering to strict financial industry security standards",
     "Engineered Kubernetes-based deployment solutions leveraging EKS, Helm charts, and custom operators, supporting production applications",
     "Created a cloud orchestration CLI tool that simplified cross-account resource management, eliminating manual processes and bottlenecks",
     "Implemented infrastructure-as-code practices across several teams, reducing configuration drift and deployment errors",
     "Designed and implemented automated security scanning and compliance checking within CI/CD pipelines",
-    "Led knowledge-sharing sessions and developed documentation to elevate team capabilities in cloud-native technologies",
-    "Technologies: AWS, AWS CDK, CloudFormation, Kubernetes, EKS, Helm, Jenkins, Docker, IAM, Terraform, Python, Node.js, Infrastructure-as-Code, CI/CD"
+    "Led knowledge-sharing sessions and developed documentation to elevate team capabilities in cloud-native technologies"
 ]
+technologies = ["AWS", "AWS CDK", "CloudFormation", "Kubernetes", "EKS", "Helm", "Jenkins", "Docker", "IAM", "Terraform", "Python", "Node.js", "Infrastructure-as-Code", "CI/CD"]
 
 [[extra.experience]]
 title = "SRE, SysAdmin, and Platforms Engineer"
 company = "Animal Care Technologies, INC"
-start_date = "2019"
-end_date = "2021"
+start_date = "Mar 2019"
+end_date = "May 2021"
+summary = "Architected, deployed, and managed dynamically scaling bare-metal Kubernetes clusters; led all migrations from legacy systems to Kubernetes"
 achievements = [
-    "Architected, deployed, and managed dynamically scaling bare-metal Kubernetes clusters; led all migrations from legacy systems to Kubernetes",
     "Managed and performance-tuned 3.5TB+ PostgreSQL database cluster, plus numerous MySQL and SQLite databases",
     "Mitigated two ransomware attacks within the first month of employment, then implemented organization-wide security measures including Wireguard VPN, VLANs, and zero-trust access for third-party developers",
     "Deployed self-hosted GitLab with DevOps pipelines and automatic blue-green deployments, implementing Infrastructure-as-Code using Terraform, Packer, and Ansible",
     "Consolidated disparate hypervisors into a centralized Proxmox cluster on ZFS with 56G InfiniBand FC SAN",
-    "Implemented comprehensive observability (Grafana, Loki, Prometheus, Jaeger, ELK, Zabbix) to preemptively identify bottlenecks and capacity constraints",
-    "Technologies: Kubernetes, PostgreSQL, GitLab, Docker, Proxmox, ZFS, InfiniBand, Ansible, Terraform, Wireguard, cri-o, containerd, haproxy, nginx, traefik, Helm"
+    "Implemented comprehensive observability (Grafana, Loki, Prometheus, Jaeger, ELK, Zabbix) to preemptively identify bottlenecks and capacity constraints"
 ]
+technologies = ["Kubernetes", "PostgreSQL", "GitLab", "Docker", "Proxmox", "ZFS", "InfiniBand", "Ansible", "Terraform", "Wireguard", "cri-o", "containerd", "haproxy", "nginx", "traefik", "Helm"]
 
 [[extra.experience]]
 title = "IT Director"
 company = "Perspectives.org"
-start_date = "2017"
-end_date = "2019"
+start_date = "May 2017"
+end_date = "Mar 2019"
+summary = "Led IT operations for an international non-profit providing in person college-level courses serving 10,000+ students annually across 250+ classes worldwide"
 achievements = [
-    "Led IT operations for an international non-profit providing in person college-level courses serving 10,000+ students annually across 250+ classes worldwide",
     "Increased cloud hosting capacity by 10x while reducing budget by 50%",
     "Reduced page load times from 5 seconds to 0.8 seconds average",
     "Developed 5-year roadmap to rebuild legacy monolithic .NET 3.5 application into micro-service architecture",
     "Built a DRM-secured, offline-enabled streaming video player desktop app in Go for classes with unreliable internet",
     "Led IT team, support department, and India-based development team",
-    "Volunteer Contributions (2012-2014): Created an online Learning Management System from scratch, reducing administrative overhead by 90% and architected horizontally scaling container orchestration platform (Docker, Rancher, AWS Spot Instances) to handle traffic spikes",
-    "Technologies: Go, Docker, Rancher, AWS, iPXE, .NET, Performance Optimization, LMS"
+    "Volunteer Contributions (2012-2014): Created an online Learning Management System from scratch, reducing administrative overhead by 90% and architected horizontally scaling container orchestration platform (Docker, Rancher, AWS Spot Instances) to handle traffic spikes"
 ]
+technologies = ["Go", "Docker", "Rancher", "AWS", "iPXE", ".NET", "Performance Optimization", "LMS"]
 
 [[extra.experience]]
 title = "Professional Application Developer"
 company = "AT&T Corp."
-start_date = "2014"
-end_date = "2017"
+start_date = "Feb 2014"
+end_date = "May 2017"
+summary = "Full stack engineer building internal tools and services, managing the complete project lifecycle from requirements gathering through production deployment"
 achievements = [
-    "Full stack engineer building internal tools and services, managing the complete project lifecycle from requirements gathering through production deployment",
     "Architected and built a large-scale external \"Order Status\" application aggregating data from 12+ legacy sources (including screen-scraped systems)",
     "Led team-wide migration from Rails/MySQL to Node.js, Angular.js, and MongoDB, reducing prototype development time significantly",
     "Engineered Docker-based DevOps pipeline that improved deployment reliability and developer productivity",
-    "Mastered functional programming in JavaScript to build high-performance, parallel-worker pipelines in an asynchronous language",
-    "Technologies: Node.js, Angular.js, MongoDB, Docker, Rails, MySQL, JavaScript, Functional Programming, Microservices, REST APIs"
+    "Mastered functional programming in JavaScript to build high-performance, parallel-worker pipelines in an asynchronous language"
 ]
+technologies = ["Node.js", "Angular.js", "MongoDB", "Docker", "Rails", "MySQL", "JavaScript", "Functional Programming", "Microservices", "REST APIs"]
 
 [[extra.experience]]
 title = "Owner / IT Consultant"
 company = "TACC Support"
-start_date = "2007"
-end_date = "2014"
+start_date = "Dec 2006"
+end_date = "Feb 2014"
+summary = "Owned and operated a local computer repair, IT consulting, and MSP company with physical storefront for 5+ years, managing a staff of 5 employees. Later evolved into small business IT and Systems Architect Consulting"
 achievements = [
-    "Owned and operated a local computer repair, IT consulting, and MSP company with physical storefront for 5+ years, managing a staff of 5 employees. Later evolved into small business IT and Systems Architect Consulting",
     "Full company name: Technicians Against Computer Cruelty",
     "Provided computer repair, network administration, and infrastructure systems architecting for several small businesses accounts: Babes Chicken, Justin Boots, Paddock Farms, DIAB Inc.",
     "Virtualized the entire US-based multi-site server infrastructure (~30 bare-metal servers) onto ESXi for international plastics manufacturing company, DIAB Inc."
 ]
+technologies = ["ESXi", "Windows Server", "Network Administration", "IT Consulting", "MSP"]
 
 # Projects / Areas of Interest
 [[extra.projects]]
