@@ -5,3 +5,5 @@ public/
 .env
 **/public/
 **/dist/
+public/search_index.en.js
+public/*
