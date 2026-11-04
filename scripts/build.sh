@@ -7,6 +7,9 @@
 # checks its SHA-256 (the Workers Builds image doesn't ship Zola). Writes
 # public/resume.md from config.toml with Bun. public/resume.pdf is copied
 # from static/resume.pdf, which scripts/print-pdf.sh regenerates.
+#
+# There's no package.json, so Workers Builds takes the Bun version from the
+# trigger's BUN_VERSION build variable (1.4.4).
 set -eu
 
 ZOLA_VERSION=0.23.6
@@ -28,5 +31,6 @@ else
   zola="$dir/zola"
 fi
 
+echo "zola $("$zola" --version | cut -d' ' -f2), bun $(bun --version)"
 "$zola" build "$@"
 bun scripts/resume-md.ts > public/resume.md

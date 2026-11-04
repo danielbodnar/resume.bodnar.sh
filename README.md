@@ -147,6 +147,8 @@ scripts/build.sh
 
 Output directory: `public/`. The build writes the Zola site and `resume.md`, and copies `static/resume.pdf`.
 
+The repo has no `package.json`, so Workers Builds gets Bun 1.4.4 from the `BUN_VERSION` build variable on the Worker's build trigger.
+
 ### PDF
 
 Browsers can't run in the Workers build, so the PDF is printed locally and committed:
