@@ -16,7 +16,7 @@ build_search_index = true
 # Personal Information
 name = "Daniel Bodnar"
 job_title = "Platform Engineer | Systems Architect | SRE | Linux Evangelist | Emerging Technologist"
-bio = """I'm a platform engineer and solutions architect with more than 25 years of experience, including customer-facing consulting and professional services through my own firm. At Patterson Companies I partnered with an Account Executive to take a Cloudflare pricing product from proof of concept to client demo in about two weeks, then wrote the runbooks so others can run it."""
+bio = """I'm a platform engineer and solutions architect with more than 25 years of experience, including customer-facing consulting and professional services through my own firm. At Patterson Companies, I partnered with an Account Executive to take a Cloudflare pricing product from proof of concept to client demo in about two weeks, then wrote the runbooks so others can run it."""
 email = "daniel@bodnar.sh"
 phone = "(940) 247-0019"
 location = "Corinth, Texas"
@@ -33,7 +33,7 @@ title = "Platform & SRE Engineer"
 company = "Patterson Companies, Animal Care Technologies (ACT Data)"
 start_date = "Apr 2026"
 end_date = "Present"
-summary = "Researches, architects, and builds Cloudflare data products and platforms for ACT Data, the veterinary practice-software business of Patterson Companies, then hands them off with runbooks, docs, and training"
+summary = "Research, architect, and build Cloudflare products, platforms, and internal tools for ACT Data, the veterinary practice-software business of Patterson Companies, then hand them off with runbooks, docs, and training"
 achievements = [
     "Built company-wide AI skills, plugins, and policies, then led workshops on using agents well, safely, and affordably",
     "Partnered with Sales and Account Executives to design, build, and bring three new products and revenue streams to market",
