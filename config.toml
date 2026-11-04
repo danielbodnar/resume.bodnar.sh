@@ -36,7 +36,7 @@ end_date = "Present"
 summary = "Research, architect, and build Cloudflare products, platforms, and internal tools for ACT Data, the veterinary practice-software business of Patterson Companies, then hand them off with runbooks, docs, and training"
 achievements = [
     "Built company-wide AI skills, plugins, and policies, then led workshops on using agents well, safely, and affordably",
-    "Partnered with Sales and Account Executives to design, build, and bring three new products and revenue streams to market",
+    "Partnered with Sales and Account Executives to design, build, and launch three new products and revenue streams",
     "Built all three on Cloudflare for a small fraction of the cost of bare-metal servers or a managed analytics database",
     "Designed and built internal tools for engineering and operations, then handed ownership to the teams that use them",
     "Leading the rollout of Cloudflare SASE, Zero Trust, and Developer Platform, and the migration off legacy infrastructure"
