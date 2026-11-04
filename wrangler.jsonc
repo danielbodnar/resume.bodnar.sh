@@ -1,0 +1,23 @@
+{
+  "name": "resume-bodnar-sh",
+  "compatibility_date": "2026-11-04",
+  "account_id": "5dae265f74e6077ad674a3d855bf9853",
+  "workers_dev": true,
+  "preview_urls": true,
+  // Static assets only. scripts/build.sh writes the Zola site, resume.md,
+  // and resume.pdf to public/.
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  },
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "invocation_logs": true },
+    "traces": { "enabled": true },
+    "issues": { "enabled": true }
+  },
+  "logpush": true,
+  // Worker Previews for branch pushes. The site has no bindings or vars,
+  // so Previews need no separate settings.
+  "previews": {}
+}

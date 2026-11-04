@@ -12,8 +12,11 @@ Personal resume website for Daniel Bodnar built with [Zola](https://getzola.org/
 # Serve locally with live reload (http://127.0.0.1:1111)
 zola serve
 
-# Build for production (output: public/)
-zola build
+# Build for production: Zola site plus public/resume.md (output: public/)
+scripts/build.sh
+
+# Reprint static/resume.pdf after editing config.toml or print styles
+scripts/print-pdf.sh
 
 # Validate configuration and check for errors
 zola check
@@ -27,8 +30,10 @@ zola check
 │   ├── index.html       # Main layout template
 │   └── partials/        # Section templates (header, experience, skills, projects)
 ├── static/css/style.css # Custom CSS (JetBrains Mono + Inter fonts)
-├── content/             # Empty - theme uses partials only
-└── .github/workflows/   # Auto-deploys to gh-pages on push to main
+├── static/resume.pdf    # Printed by scripts/print-pdf.sh, served at /resume.pdf
+├── scripts/             # build.sh, print-pdf.sh, resume-md.ts
+├── wrangler.jsonc       # Cloudflare Worker (static assets from public/)
+└── content/             # Empty - theme uses partials only
 ```
 
 ## Content Management
@@ -78,16 +83,16 @@ Templates access config via Tera syntax:
 - **No external theme dependency** - templates are local in `/templates/`
 - **Custom CSS** - `/static/css/style.css` using CSS variables for theming
 - **Fonts** - JetBrains Mono (headings), Inter (body) via Google Fonts CDN
-- **Print styles** - included in CSS for PDF generation
-- **Responsive** - mobile-first with breakpoints at 768px
+- **Print styles** - included in CSS; `scripts/print-pdf.sh` prints them to `static/resume.pdf`
+- **Responsive** - fluid; rows wrap with flexbox, no width breakpoints
 
 ## Deployment
 
-Automatic deployment via GitHub Actions:
-- Push to `main` → builds with Zola → deploys to `gh-pages` branch
-- Live at: `https://resume.bodnar.sh`
-
-The workflow uses `shalzz/zola-deploy-action@v0.21.0`.
+Cloudflare Workers Builds deploys the `resume-bodnar-sh` Worker (BitBuilder Cloud account):
+- Push to `main` → `scripts/build.sh` → `wrangler deploy` → `https://resume.bodnar.sh`
+- Push to any other branch → `wrangler preview` → a Worker Preview URL
+- `scripts/build.sh` downloads the pinned Zola release when `zola` isn't installed, since the build image doesn't include it
+- `/resume.md` is generated on every build; `/resume.pdf` is the committed `static/resume.pdf`, so reprint it with `scripts/print-pdf.sh` whenever the content or print styles change
 
 ## Common Tasks
 

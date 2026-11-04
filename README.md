@@ -137,22 +137,25 @@ The theme uses dynamic Tera templates that automatically render content from `co
 
 ## Deployment
 
-The site is configured for deployment to `https://resume.bodnar.sh`.
+The site runs on Cloudflare Workers as static assets, at `https://resume.bodnar.sh`. Workers Builds deploys every push to `main` and creates a Worker Preview for every other branch.
 
 ### Build Command
 
 ```bash
-zola build
+scripts/build.sh
 ```
 
-Output directory: `public/`
+Output directory: `public/`. The build writes the Zola site and `resume.md`, and copies `static/resume.pdf`.
 
-### Deployment Targets
+### PDF
 
-- **GitHub Pages**: Deploy the `public/` folder
-- **Vercel**: Build command: `zola build`, Output directory: `public`
-- **Netlify**: Build command: `zola build`, Publish directory: `public`
-- **Custom Server**: Upload contents of `public/` folder
+Browsers can't run in the Workers build, so the PDF is printed locally and committed:
+
+```bash
+scripts/print-pdf.sh
+```
+
+Run it after editing `config.toml` or the print styles.
 
 ## Customization
 
