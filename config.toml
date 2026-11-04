@@ -35,22 +35,11 @@ start_date = "Apr 2026"
 end_date = "Present"
 summary = "Researches, architects, and builds Cloudflare data products and platforms for ACT Data, the veterinary practice-software business of Patterson Companies, then hands them off with runbooks, docs, and training"
 achievements = [
-    "Partnered with the Account Executive on scope and success criteria, then shipped 13 of 15 review changes in 2 days",
-    "Built a sign-in-gated pricing-trends product for veterinary groups on Workers, D1, and R2 in about two weeks",
-    "Ran the product on Cloudflare for a fraction of the cost of a new bare-metal database and analytics server",
-    "Built a live-formula Excel workbook that rebuilds the headline metric so Sales could walk clients through the math",
-    "Aggregated billions of invoice lines with DuckDB from a replica export, never publishing practice or item names",
-    "Onboarded Patterson's new Cloudflare account onto 14 products in three weeks, from Workers to Access and WAF",
-    "Moved a Pro zone, its registrar record, and two Workers with their D1 and R2 data between Cloudflare accounts in a day",
-    "Built an Iceberg lake on Basin Catalog for about $10 a month, loading a multi-billion-row table from a 10+ TB database",
-    "Built Access-protected database metrics ingest on Workers, Durable Objects, and Analytics Engine, tested by replay",
-    "Fronted a development HAProxy cluster with Cloudflare Tunnel and Load Balancing; demoed zero-error failover live",
-    "Moved a cloned GitLab's 400+ GB registry and CI artifacts to R2 for a few dollars a month, with no egress fees",
-    "Wrote a Rust port of 52 of 53 root fields of a .NET GraphQL API for Workers, Containers, or one binary in 2 days",
-    "Stood up Grafana, VictoriaMetrics, and PostgreSQL monitoring and handed day-to-day operation to a teammate",
-    "Designed and hosted the \"Engineering with AI Agents\" workshop at TechDays FY27 and built an AI Fluency lab kit",
-    "Architected an agent-skills platform (39 plugins, 130+ skills) that brings company standards to Claude Code and Copilot",
-    "Built an agent that turns Teams meeting recordings into Zoho Projects updates using local whisper.cpp transcription"
+    "Built company-wide AI skills, plugins, and policies, then led workshops on using agents well, safely, and affordably",
+    "Partnered with Sales and Account Executives to design, build, and bring three new products and revenue streams to market",
+    "Built all three on Cloudflare for a small fraction of the cost of bare-metal servers or a managed analytics database",
+    "Designed and built internal tools for engineering and operations, then handed ownership to the teams that use them",
+    "Leading the rollout of Cloudflare SASE, Zero Trust, and Developer Platform, and the migration off legacy infrastructure"
 ]
 technologies = ["Cloudflare Workers", "D1", "R2", "Basin Catalog", "Durable Objects", "Workers Analytics Engine", "Cloudflare Access", "WAF", "DuckDB", "PostgreSQL", "Grafana", "Rust", "TypeScript", "Astro", "Svelte", "Claude Code"]
 
