@@ -10,6 +10,7 @@
     "directory": "./public",
     "not_found_handling": "404-page"
   },
+  "routes": [{ "pattern": "resume.bodnar.sh", "custom_domain": true }],
   "observability": {
     "enabled": true,
     "logs": { "enabled": true, "invocation_logs": true },
