@@ -43,7 +43,7 @@ a:hover {
 .resume-container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 40px 32px;
+  padding: clamp(24px, 5vw, 40px) clamp(16px, 4vw, 32px);
 }
 
 @media print {
@@ -72,7 +72,7 @@ a:hover {
 
 .resume-name {
   font-family: var(--font-mono);
-  font-size: 28pt;
+  font-size: clamp(24px, 6vw, 28pt);
   font-weight: 700;
   margin: 0 0 6px 0;
   color: var(--color-primary);
@@ -221,7 +221,6 @@ a:hover {
   .experience-item {
     margin-bottom: 14px;
     padding-bottom: 14px;
-    page-break-inside: avoid;
   }
 }
 
@@ -368,7 +367,8 @@ a:hover {
 
 .skill-row {
   display: flex;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 2px 8px;
   font-size: 10pt;
   line-height: 1.4;
 }
@@ -378,24 +378,26 @@ a:hover {
     gap: 6px;
     font-size: 9pt;
     line-height: 1.3;
+    break-inside: avoid;
   }
 }
 
 .skill-name {
   font-weight: 600;
   color: var(--color-accent);
-  min-width: 180px;
-  flex-shrink: 0;
+  flex: 0 0 14rem;
 }
 
 @media print {
   .skill-name {
-    min-width: 140px;
+    flex-basis: 12.5rem;
   }
 }
 
 .skill-keywords {
   color: var(--color-secondary);
+  flex: 1 1 20rem;
+  min-width: 0;
 }
 
 /* Projects/Interests Section */
@@ -485,13 +487,20 @@ a:hover {
     color: var(--color-accent) !important;
   }
 
-  /* Page break controls */
-  .resume-section {
-    page-break-inside: avoid;
+  /* Page breaks: sections and jobs may split across pages, but a job's
+     title, company, and summary stay with its first bullet, and no bullet,
+     tag row, or interest splits. */
+  .resume-section-title,
+  .experience-header,
+  .experience-company,
+  .experience-summary {
+    break-after: avoid;
   }
 
-  .experience-item {
-    page-break-inside: avoid;
+  .experience-highlights li,
+  .experience-technologies,
+  .project-item {
+    break-inside: avoid;
   }
 
   /* Optimize link appearance for print */
@@ -503,35 +512,5 @@ a:hover {
   /* Remove backgrounds and shadows */
   * {
     box-shadow: none !important;
-  }
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .resume-container {
-    padding: 24px 16px;
-  }
-
-  .resume-name {
-    font-size: 24px;
-  }
-
-  .resume-contact {
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  .experience-header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .skill-row {
-    flex-direction: column;
-    gap: 4px;
-  }
-
-  .skill-name {
-    min-width: auto;
   }
 }
