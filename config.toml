@@ -16,7 +16,7 @@ build_search_index = true
 # Personal Information
 name = "Daniel Bodnar"
 job_title = "Platform Engineer | Systems Architect | SRE | Linux Evangelist | Emerging Technologist"
-bio = """A full stack software engineer, sysadmin, platforms engineer and cloud architect who has been building web applications since February of 2000. My greatest strength isn't my current knowledge or prior experience, but my ability to quickly grasp new concepts by diving into the deep end and bringing order out of chaos. I've spent my career refusing to stay in one lane—my expertise spans the entire software engineering ecosystem, from low-level systems programming and infrastructure automation to application development and enterprise architecture. This breadth lets me identify solutions that specialists confined to a single domain cannot. I thrive in fast-paced environments that demand continual learning, and I enjoy identifying abstract connections. This has served me well in high-pressure situations where understanding root cause quickly means the difference between a minor incident and a major outage."""
+bio = """I'm a platform engineer and solutions architect with more than 25 years of experience, including customer-facing consulting and professional services through my own firm. At Patterson Companies I partnered with an Account Executive to take a Cloudflare pricing product from proof of concept to client demo in about two weeks, then wrote the runbooks so others can run it."""
 email = "daniel@bodnar.sh"
 phone = "(940) 247-0019"
 location = "Corinth, Texas"
@@ -28,6 +28,32 @@ website_alt = "https://bodnar.sh"
 business_website = "https://bitbuilder.cloud"
 
 # Work Experience
+[[extra.experience]]
+title = "Platform & SRE Engineer"
+company = "Patterson Companies, Animal Care Technologies (ACT Data)"
+start_date = "Apr 2026"
+end_date = "Present"
+summary = "Researches, architects, and builds Cloudflare data products and platforms for ACT Data, the veterinary practice-software business of Patterson Companies, then hands them off with runbooks, docs, and training"
+achievements = [
+    "Partnered with the Account Executive on scope and success criteria, then shipped 13 of 15 review changes in 2 days",
+    "Built a sign-in-gated pricing-trends product for veterinary groups on Workers, D1, and R2 in about two weeks",
+    "Ran the product on Cloudflare for a fraction of the cost of a new bare-metal database and analytics server",
+    "Built a live-formula Excel workbook that rebuilds the headline metric so Sales could walk clients through the math",
+    "Aggregated billions of invoice lines with DuckDB from a replica export, never publishing practice or item names",
+    "Onboarded Patterson's new Cloudflare account onto 14 products in three weeks, from Workers to Access and WAF",
+    "Moved a Pro zone, its registrar record, and two Workers with their D1 and R2 data between Cloudflare accounts in a day",
+    "Built an Iceberg lake on Basin Catalog for about $10 a month, loading a multi-billion-row table from a 10+ TB database",
+    "Built Access-protected database metrics ingest on Workers, Durable Objects, and Analytics Engine, tested by replay",
+    "Fronted a development HAProxy cluster with Cloudflare Tunnel and Load Balancing; demoed zero-error failover live",
+    "Moved a cloned GitLab's 400+ GB registry and CI artifacts to R2 for a few dollars a month, with no egress fees",
+    "Wrote a Rust port of 52 of 53 root fields of a .NET GraphQL API for Workers, Containers, or one binary in 2 days",
+    "Stood up Grafana, VictoriaMetrics, and PostgreSQL monitoring and handed day-to-day operation to a teammate",
+    "Designed and hosted the \"Engineering with AI Agents\" workshop at TechDays FY27 and built an AI Fluency lab kit",
+    "Architected an agent-skills platform (39 plugins, 130+ skills) that brings company standards to Claude Code and Copilot",
+    "Built an agent that turns Teams meeting recordings into Zoho Projects updates using local whisper.cpp transcription"
+]
+technologies = ["Cloudflare Workers", "D1", "R2", "Basin Catalog", "Durable Objects", "Workers Analytics Engine", "Cloudflare Access", "WAF", "DuckDB", "PostgreSQL", "Grafana", "Rust", "TypeScript", "Astro", "Svelte", "Claude Code"]
+
 [[extra.experience]]
 title = "Founder, Cloud Architect, CIO"
 company = "BitBuilder Cloud & Consulting, LLC"
@@ -119,19 +145,19 @@ technologies = ["ESXi", "Windows Server", "Network Administration", "IT Consulti
 
 # Projects / Areas of Interest
 [[extra.projects]]
-title = "Low-level Linux"
-description = "Deep interest in kernel-level optimizations, embedded systems, and hardware programming"
-technologies = ["Embedded Development", "FPGA", "Programmable Hardware"]
+title = "Hardware hacking"
+description = "Reverse-engineering ASUS router firmware, editing UEFI firmware, and CNC machining"
+technologies = ["Router firmware", "UEFI (Aptio V)", "CNC", "FPGA"]
 
 [[extra.projects]]
-title = "System Architecture"
-description = "Passion for designing and building scalable, resilient distributed systems"
-technologies = ["Distributed Systems", "Microservice Architecture", "Scalable Systems"]
+title = "Image-based Linux"
+description = "Building a git-ops, multi-tenant hypervisor on systemd's vmspawn, nspawn, and sysext stack"
+technologies = ["systemd", "UKI", "DDI", "ZFS"]
 
 [[extra.projects]]
-title = "Innovation"
-description = "Early adopter focused on cutting-edge technologies and optimization techniques"
-technologies = ["Early Technology Adoption", "Emerging Technologies"]
+title = "Agent tooling"
+description = "Writing Claude Code plugins, skills, and MCP servers, and running coding agents in sandboxes"
+technologies = ["Claude Code", "MCP", "Cloudflare Sandboxes"]
 
 # Skills
 [[extra.skills]]
