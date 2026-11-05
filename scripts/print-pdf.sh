@@ -23,3 +23,11 @@ rm -rf "$out"
 if command -v pdfinfo >/dev/null 2>&1; then
   pdfinfo static/resume.pdf | grep '^Pages:'
 fi
+# ATS parsers (Greenhouse among them) can't read Type 3 fonts.
+if command -v pdffonts >/dev/null 2>&1; then
+  if pdffonts static/resume.pdf | grep -q 'Type 3'; then
+    echo "static/resume.pdf embeds Type 3 fonts:" >&2
+    pdffonts static/resume.pdf | grep 'Type 3' >&2
+    exit 1
+  fi
+fi

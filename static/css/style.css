@@ -514,3 +514,17 @@ a:hover {
     box-shadow: none !important;
   }
 }
+
+/* ATS parsers read the PDF's text, so print uses fonts Chromium embeds as
+   TrueType (Inter and JetBrains Mono embed as unreadable Type 3), skips the
+   decorative contact glyphs (the globe pulls in a color emoji font), and
+   marks bullets with a "• " string, which extracts as a real character.
+   Kept last so it wins over the rules above. */
+@media print {
+  :root {
+    --font-mono: 'IBM Plex Mono', monospace;
+    --font-sans: 'Fira Sans', sans-serif;
+  }
+  .resume-contact-icon { display: none; }
+  .experience-highlights { list-style: "• "; }
+}
