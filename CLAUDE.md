@@ -82,7 +82,7 @@ Templates access config via Tera syntax:
 
 - **No external theme dependency** - templates are local in `/templates/`
 - **Custom CSS** - `/static/css/style.css` using CSS variables for theming
-- **Fonts** - JetBrains Mono (headings), Inter (body) via Google Fonts CDN
+- **Fonts** - JetBrains Mono (headings), Inter (body) via Google Fonts CDN; print uses IBM Plex Mono and Fira Sans, because Chromium embeds Inter and JetBrains Mono as Type 3 fonts that ATS parsers can't read (`scripts/print-pdf.sh` fails on any Type 3 font)
 - **Print styles** - included in CSS; `scripts/print-pdf.sh` prints them to `static/resume.pdf`
 - **Responsive** - fluid; rows wrap with flexbox, no width breakpoints
 

@@ -23,3 +23,17 @@ rm -rf "$out"
 if command -v pdfinfo >/dev/null 2>&1; then
   pdfinfo static/resume.pdf | grep '^Pages:'
 fi
+# ATS parsers (Greenhouse among them) can't read Type 3 fonts.
+if ! command -v pdffonts >/dev/null 2>&1; then
+  echo "pdffonts is required to validate static/resume.pdf; install Poppler." >&2
+  exit 1
+fi
+if ! fonts=$(pdffonts static/resume.pdf); then
+  echo "Failed to inspect fonts in static/resume.pdf" >&2
+  exit 1
+fi
+if printf '%s\n' "$fonts" | grep -q 'Type 3'; then
+  echo "static/resume.pdf embeds Type 3 fonts:" >&2
+  printf '%s\n' "$fonts" | grep 'Type 3' >&2
+  exit 1
+fi
